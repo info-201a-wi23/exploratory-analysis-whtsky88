@@ -9,12 +9,12 @@ library(dplyr)
 library(ggplot2)
 library("scales")
 # 
-# # load states dataframe into variable `covid` and filter for most recent data
+# # load layoff dataframe into variable `layoffs`
 layoffs <- read.csv("tech_layoffs.csv", stringsAsFactors = FALSE)
 
 # Subset the `covid` dataframe for our table. What we want to show:
-# - select the state, cases, and deaths columns
-# - sort in descending order by cases
+# - select the total_layoffs, company, industry
+# - sort in descending order by total_layoffs
 # - slice the top 5 rows
 agg_table <- layoffs %>% filter(total_layoffs != "Unclear") %>% 
   mutate(total_layoffs = as.numeric(total_layoffs)) %>% arrange(-total_layoffs) %>% 
