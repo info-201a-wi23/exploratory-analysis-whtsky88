@@ -21,34 +21,52 @@ No more than three sentences that summarize your project. Focus on the very most
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+Tech Layoffs, Technology Comapanies, COVID-19 Pandemic
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+In this assignment, our goal was to investigate the recent rise of layoffs in the tech industry. This is relevant to many in this class, as most want a job in this sector. Looking into this will help us prepare a significant risk in our future. Our three associated questions are:
+
+1. What kind of companies have been laying off the most?
+
+2. What is the total number of layoffs over the past year?
+
+3. How have layoffs increased in the past year?
+
+By asking what companies are most impacted, we can get a good picture of where in the tech industry is most unstable. Figuring out the total number of layoffs will give us a sense of skill to identify the scale of this issue. Lastly, by analyzing changes in throughout the year, we can hopefully discover growth trends and make predictions about the future.
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+The COVID-19 pandemic has dramatically impacted the economy of the United States. For many industries, this meant major job losses, as companies couldn’t sustain employing their typical amount of workers when the world crawled to a halt. Some industries, however, faced a “hiring boom” as demand increased for their services. This included necessities such as retail and medicine workers, as well as jobs in tech. After an initial spike of layoffs in 2020, many tech companies such as Netflix and Amazon found a major increase of consumers relying on their products to get through the quarantine, resulting in an industry-wide rush to hire for the increased demand. Yet, it seems most of these companies overestimated their demand for labor, and are now facing massive layoffs to stay afloat. 
+A CNBC article titled [“Tech jobs were hit the hardest by layoffs last year”](https://www.cnbc.com/2023/01/05/tech-jobs-hit-the-hardest-by-layoffs-last-year-report.html) provides examples of these instances, and notes how 2022 had nearly a 649% increase in layoffs compared to the year before. They found “cost cutting” to be the most common given reason for these layoffs, with “market or economic conditions” following closely. 
+A Bloomberg article titled [“What 2022 tech layoffs say about Silicon Valley, the economy”](https://www.bloomberg.com/news/articles/2023-01-18/what-2022-tech-layoffs-say-about-silicon-valley-the-economy) provides an in-depth exploration of these layoffs, seeking to explain their most likely causes and the aftermath of these decisions. Taking data from the site [Layoffs.fyi](https://layoffs.fyi/), the article charts out the largest companies impacted, and notes how this is the biggest series of layoffs in the tech industry since the infamous 2001 dot-com bubble market crash. Looking at public statements from major CEOs, the researchers found that the most likely given reason for this crash was overconfident optimism on the companies’ future trajectories “based on assumptions of ever-increasing growth,” worsened only by the outlier demand for their services during COVID lockdown. The article also described the various ways companies are responding to this issue, ranging from covering up the irregular behavior, to getting bought, to offering ex-employees generous severance packages to keep good press. 
+An article from the New York Times titled [“For tech companies, years of easy money yield to Hard Times”](https://www.nytimes.com/2023/01/23/technology/tech-interest-rates-layoffs.html) offers a different explanation for these companies’ struggles, using the startup Carvana as reference. Their takeaway from these major tech companies facing economic hardship is that it’s due to interest rates rising during the pandemic. For a long time, tech companies were acquiring funding from investors at very low interest rates. This allowed these companies to operate fairly cheaply, and support growth even while the company isn’t profitable. With the pandemic - interest rates had to rise - and many tech companies are now facing a rude awakening that they may no longer operate off what the article calls “cheap money,” and that they can’t afford to keep expanding at the rate they were before this shift. 
+
+References
+
+Feiner, L. (2023, January 5). Tech jobs were hit the hardest by layoffs last year. CNBC. Retrieved February 2, 2023, from https://www.cnbc.com/2023/01/05/tech-jobs-hit-the-hardest-by-layoffs-last-year-report.html 
+
+Carr, A., & McBride, S. (2023, January 18). What 2022 tech layoffs say about Silicon Valley, the economy. Bloomberg.com. Retrieved February 2, 2023, from https://www.bloomberg.com/news/articles/2023-01-18/what-2022-tech-layoffs-say-about-silicon-valley-the-economy 
+
+Streitfeld, D. (2023, January 23). For tech companies, years of easy money yield to Hard Times. The New York Times. Retrieved February 2, 2023, from https://www.nytimes.com/2023/01/23/technology/tech-interest-rates-layoffs.html 
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+The data we are using is "Technology Company Layoffs". We found the data from the website Kaggle. The collaborator for this project is Widya Salim. This data was collected from various news sources and direct company websites, including but not limited to TechCrunch, GeekWire, CNBC, World Street Journal, Linkedin, Bloomberg and Business Insider. The reason for its creation includes gaining insights on technology industry trends and making informed decisions for an individual's own career or business. There are 477 rows representing the different tech companies, with 9 columns each representing company, total lay_offs, impacted_workforce_percentage, Industry, headquarter_location, sources, reported date, status, and additional notes. One problem that came across is that since the data was released through direct company websites, there is the possibility that companies might increase or decrease the actual percentages of laid_off employees to hold their market status. For example they could decrease the recorded amount of laid-off employees to show their power in holding the current market value of the company. With a decreased amount of recorded laid-off workers, it would prove that the company is still strong enough for any investments compared to other similar companies within the same field. In addition, sources recorded from news sources also have some hidden risks. News companies make profit through the influenece and amount of viewers of the news, so they could adjust the numbers large enough to attract more viewers, which might not be an accurate representation of the data, 
+
+https://www.kaggle.com/datasets/salimwid/technology-company-layoffs-20222023-data
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+Our project aims to better understand the context of tech company layoffs. Depending on how our research questions are answered, technologists and designers may be facing an even more competitive job market which means that they would need to demonstrate their value and skills in a tighter labor market. They may also need to consider other career paths such as freelancing or starting their own business to maintain their income and job security.
+
+For policymakers, an increase in layoffs may heighten the need for support programs and policies to help those who have been impacted by the job loss, as well as an incentive to boost the economy and create new job opportunities. Additionally, this may also raise questions about the role of technology in the economy. It's worth noting that the COVID-19 pandemic has had a significant impact on the global economy, and many companies across different industries have had to make difficult decisions pertaining to layoffs in order to stay afloat.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+One limitation we may face is that our dataset will not contain information on all layoffs that have occurred and will occur in the future. This means that we may be missing data on smaller or less well-publicized layoffs. The missing data might also be related to data confidentiality, where companies may be reluctant to publicy disclose information on layoffs. This could limit the amount of data available in the set and make it difficult to draw conclusions about the scale and nature of layoffs.
+
+As our project is researching an occurring event, this means that certain data in our set is subject to change. This makes the reliability of our data a potential limitation, especially since our data is collected from various sources, meaning a higher risk of inaccuracy. It's possible that our data may need to be supplemented with additional information from other sources to gain a more complete understanding of the issue.
 
 ### Summary Information
 
@@ -60,22 +78,27 @@ Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
 
-### Chart 1
+### Chart 1: Sources
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, code = readLines("chart_1.R", warn = FALSE)}
 ```
+
+This pie chart displays the journalist sources that the dataset attributes to announcing Tech Company Layoffs. Each "slice" of the pie is attributed to a major media source. For the sake of simplicity and clarity, every instance in which a company's CEO announced the layoffs publicly was merged into one "Company CEO" category, and every media source that reported the layoffs of fewer than 5 companies was merged into the "other" category. 
+
+I chose a pie chart to represent this data, because I wanted to examine which media companies have done the most reporting on the layoffs. Pie charts display proportions well, showing the percentage each variable takes up from the total.  
+
+This chart is important because it shows which media companies are the most proactive at reporting important tech news. This can influence where consumers go for information about the subject. 
 
 ### Chart 2
 
-Include a chart
+```{r, echo = FALSE, code = readLines("chart_2.R", warn = FALSE)}
+```
 
-Describe why you chose this chart and what information it reveals
+This bar graph compares the the ten most-impacted tech industries in the mass-layoffs. The graph calculates the average percent of layoffs in each industry using the dataset's provided percentages of each company let go and their corresponding industry.  
+
+I chose a bar graph because I was comparing the proportions of each category, but independent from one another instead of their percentage of one whole. Initially I chose to compare the number of layoffs in each industry, but those results were fairly predictable being tied to the biggest industries worker-wise. So instead, I chose to compare the average percent of each industry that has been laid off, hoping to find results that are more descriptive of how each industry has actually been affected. 
+
+This graph is important because it shows the industries that have been hurt the most by the layoffs, rather than just bringing attention to the biggest or most popular ones. There were some expected industries like Big Data and Blockchain, but also some surprising results like Agricultural Tech and 3D Printing.
 
 ### Chart 3
 
