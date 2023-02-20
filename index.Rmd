@@ -91,9 +91,14 @@ This chart is important because it shows which media companies are the most proa
 
 ### Chart 2
 
-Include a chart
+```{r, echo = FALSE, code = readLines("chart_2.R", warn = FALSE)}
+```
 
-Describe why you chose this chart and what information it reveals
+This bar graph compares the the ten most-impacted tech industries in the mass-layoffs. The graph calculates the average percent of layoffs in each industry using the dataset's provided percentages of each company let go and their corresponding industry.  
+
+I chose a bar graph because I was comparing the proportions of each category, but independent from one another instead of their percentage of one whole. Initially I chose to compare the number of layoffs in each industry, but those results were fairly predictable being tied to the biggest industries worker-wise. So instead, I chose to compare the average percent of each industry that has been laid off, hoping to find results that are more descriptive of how each industry has actually been affected. 
+
+This graph is important because it shows the industries that have been hurt the most by the layoffs, rather than just bringing attention to the biggest or most popular ones. There were some expected industries like Big Data and Blockchain, but also some surprising results like Agricultural Tech and 3D Printing.
 
 ### Chart 3
 
