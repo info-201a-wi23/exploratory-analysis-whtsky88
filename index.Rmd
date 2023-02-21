@@ -99,9 +99,12 @@ who took the larger burden
 
 ### Table
 
-Include a table of aggregate information
+```{r table, echo=FALSE, results='asis'}
+source("agg_table.R")
+kable(agg_table, caption = "Top five companies impacted by the layoffs")
+```
+This table shows the number of layoffs from companies ranked in order. We noticed that Amazon has the highest number of layoffs with 18000. This table is important because it helps us to visualize the amount of layoffs from companies, and also seeing the pattern that larger tech companies such as Amazon and Microsoft has the highest number of people laid off. 
 
-Describe why you included the table and what information it reveals
 
 ### Chart 1: Sources
 

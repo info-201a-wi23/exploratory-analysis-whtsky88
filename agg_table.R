@@ -17,7 +17,9 @@ layoffs <- read.csv("tech_layoffs.csv", stringsAsFactors = FALSE)
 # - sort in descending order by total_layoffs
 # - slice the top 5 rows
 agg_table <- layoffs %>% filter(total_layoffs != "Unclear") %>% 
-  mutate(total_layoffs = as.numeric(total_layoffs)) %>% arrange(-total_layoffs) %>% 
-  select(company, total_layoffs, industry) %>% slice_head(n=5)
+  mutate(total_layoffs = as.numeric(total_layoffs)) %>%
+  group_by(company) %>% 
+  summarize(num_layoffs = sum(total_layoffs), industry = industry) %>% 
+  arrange(-num_layoffs)
 
-agg_table
+agg_table <- agg_table[1:5,]
