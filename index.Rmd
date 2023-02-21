@@ -5,19 +5,25 @@ output: html_document
 
 ## Project title
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+Technology Company Layoffs Research and Analysis
 
 ### Authors
 
-Names of your team members
+Andy Li
+
+Dustin Duc Duy Nguyen
+
+Edward Newell
+
+Guillermo Andres Melendez-Carlson 
 
 ### Date
 
-Winter 2022
+February 20th, Winter 2023
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+Our main question is how did the layoff numbers varies from different companies and how would it impact the associate companies? This question is important because with the current economic situation, the layoff numbers could cause indiviudals to lose their only source of income. To address this concern, we plan to analyze a large data set that contains the amount of layoffs from different companies. 
 
 ### Keywords
 
@@ -102,6 +108,11 @@ This graph is important because it shows the industries that have been hurt the 
 
 ### Chart 3
 
-Include a chart
+```{r, echo = FALSE, code = readLines("chart_3.R", warn = FALSE)}
+```
 
-Describe why you chose this chart and what information it reveals
+This scatterplot plots all companies recorded impacted workforce percentage by the reported date. The color of each dot is determined by whether they are a public or private company.
+
+I chose a scatterplot because I wanted to see if there was a correlation between the months that companies reported their layoffs and the actual impact it had on the workforce. Additionally, I wanted to show how a company's IPO had a factor in how much they can be affected. In the graph above, there is a slightly positive correlation between the impact on the workforce and the reported date. This means that companies are generally laying off more of their employees as time goes on. Additionally private companies tend to lay off a larger portion of their companies, with a good number of them laying off all their employees.
+
+This graph is important because it shows that the tech industry is still currently going through layoffs with no signs of slowing down. This could continue until at least the end of the year. For people looking for jobs in the tech industry, this means that they should be prepared for open position to be more competitive and will have to work to stand out from other applicants. Additionally, it is more riskier applying to private companies for the time being as layoffs tend to have more impact there.
