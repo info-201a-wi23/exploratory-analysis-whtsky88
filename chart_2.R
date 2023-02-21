@@ -16,7 +16,7 @@ layoffs <- layoffs %>%
 # # create a new dataframe that is just the broad industry and the total layoffs in each
 industry_layoffs <- layoffs %>%
   group_by(simplify_industry) %>%
-  summarize(mean_percent_layoffs = mean(as.numeric(impacted_workforce_percentage), rm.na = TRUE))
+  summarize(mean_percent_layoffs = mean(suppressWarnings(as.numeric(impacted_workforce_percentage)), rm.na = TRUE))
 
 # # remove all the NA values in dataframe
 industry_layoffs <- industry_layoffs[complete.cases(industry_layoffs), ] 

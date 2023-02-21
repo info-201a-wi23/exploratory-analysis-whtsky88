@@ -33,5 +33,6 @@ source_count <- source_count %>%
 # # plot a stacked bar chart, and then modify for pie chart
 ggplot(as.data.frame(source_count), aes(x="", y=Freq, fill=Sources)) +
   geom_bar(stat="identity", width=1, color="aliceblue") +
+  labs(title = "Major Media Source Distribution") +
   coord_polar("y", start=0) +
   theme_void() # remove background, grid, numeric labels

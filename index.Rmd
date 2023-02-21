@@ -114,7 +114,7 @@ I chose a pie chart to represent this data, because I wanted to examine which me
 
 This chart is important because it shows which media companies are the most proactive at reporting important tech news. This can influence where consumers go for information about the subject. 
 
-### Chart 2
+### Chart 2: Ten most-impacted tech industries
 
 ```{r, echo = FALSE, code = readLines("chart_2.R", warn = FALSE)}
 ```
@@ -125,7 +125,7 @@ I chose a bar graph because I was comparing the proportions of each category, bu
 
 This graph is important because it shows the industries that have been hurt the most by the layoffs, rather than just bringing attention to the biggest or most popular ones. There were some expected industries like Big Data and Blockchain, but also some surprising results like Agricultural Tech and 3D Printing.
 
-### Chart 3
+### Chart 3: Impacted Workforce Percentage by Reported Date
 
 ```{r, echo = FALSE, code = readLines("chart_3.R", warn = FALSE)}
 ```
