@@ -12,7 +12,8 @@ summary_information <- function(layoffs) {
 
   # Total number of layoffs in the dataset
   layoffs$total_layoffs <- suppressWarnings(as.numeric(layoffs$total_layoffs))
-  summary_info$total_layoff <- sum(layoffs$total_layoffs, na.rm = TRUE)
+  summary_info$total_layoff <- as.integer(
+    sum(layoffs$total_layoffs, na.rm = TRUE))
 
   # Company layoffs the most and its number
   max_layoffs <- layoffs %>%
@@ -21,7 +22,7 @@ summary_information <- function(layoffs) {
     filter(! is.na(total_layoff_num)) %>%
     filter(total_layoff_num == max(total_layoff_num))
   summary_info$company_name <- max_layoffs$company
-  summary_info$max_company_layoffs <- max_layoffs$total_layoff_num
+  summary_info$max_company_layoffs <- as.integer(max_layoffs$total_layoff_num)
 
   # Most location of the headquarter of the layoff company
   summary_info$max_headquarter_location <- layoffs %>%
@@ -60,13 +61,4 @@ summary_information <- function(layoffs) {
   return(summary_info)
 }
 
-# In summary of all the total technology company layoffs, we found that there
-# are `477` number of companies reported in the total dataset. Adding them all
-# together, we found that there are a total of `13156` people that are laid off.
-# Given such information, we dug deeper into the dataset and found out that
-# `Amazon` company has been affected the most and had the greatest number of
-# layoffs with a total of `18000` people. Most company’s headquarter are located
-# at `San Francisco`. To sum up all the given values, the top layoff industry is
-# `fintech`. From all the companies listed in this dataset, `75.7`% of them are
-# identified as private, indicating that most laid off companies are private
-# companies, who took the larger burden.
+summary_info <- summary_information(layoffs)

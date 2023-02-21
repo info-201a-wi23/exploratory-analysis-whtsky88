@@ -2,6 +2,9 @@
 title: "Exploratory Analysis"
 output: html_document
 ---
+```{r setup, include=FALSE}
+library("knitr")
+```
 
 ## Project title
 
@@ -76,7 +79,23 @@ As our project is researching an occurring event, this means that certain data i
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+```{r summary, include=FALSE, warn = FALSE}
+source("summary_information.R")
+```
+
+In summary of all the total technology company layoffs, we found that there
+are `r summary_info$unique_companies` number of companies reported in the total
+dataset. Adding them all together, we found that there are a total of
+`r summary_info$total_layoff` people that are laid off.
+Given such information, we dug deeper into the dataset and found out that
+`r summary_info$company_name` company has been affected the most and had the
+greatest number of layoffs with a total of `r summary_info$max_company_layoffs`
+people. Most company’s headquarter are located at
+`r summary_info$max_headquarter_location`. To sum up all the given values,
+the top layoff industry is `r summary_info$max_indstry`. From all the companies
+listed in this dataset, `r summary_info$private_percent`% of them are identified
+as private, indicating that most laid off companies are private companies,
+who took the larger burden
 
 ### Table
 
